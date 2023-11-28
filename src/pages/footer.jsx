@@ -8,15 +8,15 @@ export default function footer() {
     <div className="container text-center text-md-start py-5">
       <div className="footer-wrap">
         <div className="about">
-          <img src="../src/assets/img/icon/logo.svg" alt="" />
+          <img src="/assets/img/icon/logo.svg" alt="" />
           <p className="text-muted py-4">
-            Start working with Firmbee which can provide you with all the tools needed to run an effcieint business remotely.
+           s Start working with Firmbee which can provide you with all the tools needed to run an effcieint business remotely.
           </p>
           <div className="social-media">
-            <Link to="" className="me-2 text-reset"><img src="../src/assets/img/icon/social-media-01.svg" alt="" /></Link>
-            <Link to="" className="me-2 text-reset"><img src="../src/assets/img/icon/social-media-02.svg" alt="" /></Link>
-            <Link to="" className="me-2 text-reset"><img src="../src/assets/img/icon/social-media-03.svg" alt="" /></Link>
-            <Link to="" className="me-2 text-reset"><img src="../src/assets/img/icon/social-media-04.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-01.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-02.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-03.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-04.svg" alt="" /></Link>
           </div>
         </div>
 
