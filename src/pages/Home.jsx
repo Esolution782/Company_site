@@ -49,9 +49,9 @@ export default function index() {
         <div className="intro-img">
             <img src="/assets/img/header-img.png" alt=""/>
         </div>
-        <div className="scroll">
+        {/* <div className="scroll">
           <Link to="#variations"><img src="/assets/img/icon/icon-scroll-down.svg" alt=""/><span className="text-muted">Scroll down</span></Link>
-        </div>
+        </div> */}
       </div>
     
       <div className="clients text-center">
