@@ -22,9 +22,7 @@ export default function index() {
           <li className="nav-item">
             <Link className="nav-link" to="./contact.html">Contact</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="./blog.html">Blog</Link>
-          </li>         
+        
         </ul>
         <ul className="right navbar-nav ms-auto">
           <li className="nav-item-right">
@@ -41,7 +39,7 @@ export default function index() {
     <div className="container">
       <div className="intro pb-5">
         <div className="intro-text">
-          <h1 className="intro-h1">Lorem Ipsum is not simply random text</h1>
+          <h1 className="intro-h1">Ewaysolution is a SOftware Development Company</h1>
           <p className="front-page">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           <div className="buttons">
             <Link to="" className="btn-fill">Read More</Link>

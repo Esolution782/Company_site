@@ -55,7 +55,7 @@ export default function footer() {
         
       </div>
       <div className="copyright">
-        <p>&copy; 2022 YOUR-DOMAIN | Created by <Link to="https://firmbee.com/solutions/free-invoicing-app-billing-software/" title="Firmbee - Free Invoicing App">Firmbee.com</Link></p>
+        <p>&copy;{new Date().getFullYear()} https://company-site-teal.vercel.app | Created by <Link to="https://company-site-teal.vercel.app/" title="https://company-site-teal.vercel.app">Ewaysolution.lk</Link></p>
 
       </div>
     </div>
