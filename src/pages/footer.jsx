@@ -10,7 +10,7 @@ export default function footer() {
         <div className="about">
           <img className="logo" src="/assets/img/logo_sideText.png" alt="" />
           <p className="text-muted py-4">
-          At Ewaysolution, we're passionate about crafting cutting-edge solutions that drive innovation and transform ideas into reality. Explore our world of software development excellence.
+          At Cleverbit, we're passionate about crafting cutting-edge solutions that drive innovation and transform ideas into reality. Explore our world of software development excellence.
           </p>
           <div className="social-media">
             <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-01.svg" alt="" /></Link>
@@ -55,7 +55,7 @@ export default function footer() {
         
       </div>
       <div className="copyright">
-        <p>Copyright  &copy;{new Date().getFullYear()} <Link to="https://company-site-teal.vercel.app/" title="https://company-site-teal.vercel.app" target='_blank'><b>Ewaysolution</b></Link>. All Rights Reserved </p>
+        <p>Copyright  &copy;{new Date().getFullYear()} <Link to="https://company-site-teal.vercel.app/" title="https://company-site-teal.vercel.app" target='_blank'><b>Cleverbit</b></Link>. All Rights Reserved </p>
 
       </div>
     </div>

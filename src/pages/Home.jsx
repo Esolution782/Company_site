@@ -5,7 +5,7 @@ import Footer from "./footer";
 export default function index() {
   return (
     <>
-      <p className="font-bold  ">Welcome to Ewaysolution</p>
+      <p className="font-bold  ">Welcome to Cleverbit</p>
       <nav className="navbar navbar-expand-xl fixed-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
@@ -64,9 +64,9 @@ export default function index() {
         <div className="container">
           <div className="intro pb-5">
             <div className="intro-text">
-              <h1 className="intro-h1 ">Welcome to Ewaysolution</h1>
+              <h1 className="intro-h1 ">Welcome to Cleverbit</h1>
               <p className="front-page">
-                At Ewaysolution, we're passionate about crafting cutting-edge
+                At Cleverbit, we're passionate about crafting cutting-edge
                 solutions that drive innovation and transform ideas into
                 reality. Explore our world of software development excellence.
               </p>
@@ -247,7 +247,7 @@ export default function index() {
               <div className="col-md-5 news-text">
                 <h2>Get your update news</h2>
                 <p>
-                  Stay informed about the latest happenings at Ewaysolution. We
+                  Stay informed about the latest happenings at Cleverbit. We
                   are committed to keeping you in the loop with our most recent
                   developments, product releases, and industry insights.
                 </p>
