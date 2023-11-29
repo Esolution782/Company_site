@@ -1,3 +1,9 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+
 *,
 *::after,
 *::before {
@@ -41,6 +47,10 @@ input:focus, textarea:focus {
   border: 1px solid #aaaaaa !important;
 }
 
+.logo{
+  width: 140%;
+ 
+}
 button {
   border: none;
 }
@@ -124,7 +134,7 @@ h4::before {
   margin-right: 100px;
 }
 
-.navbar .navbar-brand img {
+.navbar .navbar-brand .img{
   width: 100%;
 }
 

@@ -8,9 +8,9 @@ export default function footer() {
     <div className="container text-center text-md-start py-5">
       <div className="footer-wrap">
         <div className="about">
-          <img src="/assets/img/icon/logo.svg" alt="" />
+          <img className="logo" src="/assets/img/logo_sideText.png" alt="" />
           <p className="text-muted py-4">
-           s Start working with Firmbee which can provide you with all the tools needed to run an effcieint business remotely.
+          At Ewaysolution, we're passionate about crafting cutting-edge solutions that drive innovation and transform ideas into reality. Explore our world of software development excellence.
           </p>
           <div className="social-media">
             <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-01.svg" alt="" /></Link>
@@ -55,7 +55,7 @@ export default function footer() {
         
       </div>
       <div className="copyright">
-        <p>&copy;{new Date().getFullYear()} https://company-site-teal.vercel.app | Created by <Link to="https://company-site-teal.vercel.app/" title="https://company-site-teal.vercel.app">Ewaysolution.lk</Link></p>
+        <p>Copyright  &copy;{new Date().getFullYear()} <Link to="https://company-site-teal.vercel.app/" title="https://company-site-teal.vercel.app" target='_blank'><b>Ewaysolution</b></Link>. All Rights Reserved </p>
 
       </div>
     </div>
