@@ -282,7 +282,7 @@ export default function index() {
               </div>
               <div className="person">
                 <div className="photo">
-                  <img src="/assets/img/team-2.png" alt="" />
+                  <img src="/assets/img/team-3.png" alt="" />
                 </div>
                 <span className="name">Vinoth</span>
                 <span>UI/UX Engineer</span>
@@ -296,24 +296,24 @@ export default function index() {
               </div>
               <div className="person">
                 <div className="photo">
-                  <img src="/assets/img/team-2.png" alt="" />
+                  <img src="/assets/img/team-3.png" alt="" />
                 </div>
-                <span className="name">x</span>
-                <span>Associate Software Engineer</span>
+                <span className="name">MIM. Rasmy</span>
+                <span>Client Support</span>
               </div>
               <div className="person">
                 <div className="photo">
                   <img src="/assets/img/team-2.png" alt="" />
                 </div>
-                <span className="name">Suhaith</span>
+                <span className="name">M.Suhaith</span>
                 <span>Associate Software Engineer</span>
               </div>
               <div className="person">
                 <div className="photo">
-                  <img src="/assets/img/team-2.png" alt="" />
+                  <img src="/assets/img/team-3.png" alt="" />
                 </div>
-                <span className="name">x</span>
-                <span>Associate Software Engineer</span>
+                <span className="name">name</span>
+                <span>Position</span>
               </div>
             </div>
           </div>
