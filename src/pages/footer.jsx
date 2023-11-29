@@ -55,7 +55,7 @@ export default function footer() {
         
       </div>
       <div className="copyright">
-        <p>Copyright  &copy;{new Date().getFullYear()} <Link to="https://company-site-teal.vercel.app/" title="https://company-site-teal.vercel.app" target='_blank'><b>Cleverbit</b></Link>. All Rights Reserved </p>
+        <p>Copyright  &copy;{new Date().getFullYear()} <Link to="https://cleverbit.vercel.app/" target='_blank'><b>Cleverbit</b></Link>. All Rights Reserved </p>
 
       </div>
     </div>
