@@ -275,11 +275,10 @@ export default function index() {
             <div className="team-person">
               <div className="person">
                 <div className="photo">
-                  <img src="/assets/img/team-2.png" alt="" />
+                  <img src="/assets/img/team-1.png" alt="" />
                 </div>
                 <span className="name">MAM.AASIM</span>
                 <span>CEO/Founder </span>
-                <span>Tech Lead</span>
               </div>
               <div className="person">
                 <div className="photo">
