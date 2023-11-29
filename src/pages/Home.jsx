@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
 
 export default function index() {
+  const whychooseus = useRef(null);
+  const ourService = useRef(null);
+  const contact = useRef(null);
+  const home = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+ 
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <p className="font-bold  ">Welcome to Cleverbit</p>
+      <p className="font-bold  " ref={home}>Welcome to Cleverbit</p>
       <nav className="navbar navbar-expand-xl fixed-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
@@ -25,24 +38,22 @@ export default function index() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link  active" to="/">
-                  Home
-                </Link>
+                <Link onClick={() => scrollToSection(home) } className="nav-link   active">Home</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                Why Choose Us
-                </Link>
+              <li
+                className="nav-item"
+                onClick={() => scrollToSection(whychooseus)}
+              >
+                <Link className="nav-link">Why Choose Us</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                Our Service
-                </Link>
+              <li
+                className="nav-item"
+                onClick={() => scrollToSection(ourService)}
+              >
+                <Link className="nav-link">Our Service</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">
-                  Contact
-                </Link>
+              <li className="nav-item" onClick={() => scrollToSection(contact)}>
+                <Link className="nav-link">Contact</Link>
               </li>
             </ul>
             <ul className="right navbar-nav ms-auto">
@@ -110,7 +121,7 @@ export default function index() {
             </div>
           </div>
 
-          <div id="variations" className="variations">
+          <div id="variations" className="variations" ref={ourService}>
             <div className="first-variation">
               <div className="img">
                 <img src="/assets/img/man.png" alt="" />
@@ -143,7 +154,6 @@ export default function index() {
 
                 <p>
                   <b>- Consulting and Strategy:</b>
-               
                 </p>
                 <p>
                   Strategic insights to guide your digital transformation
@@ -161,21 +171,31 @@ export default function index() {
               </div>
             </div>
 
-            <div className="second-variation">
+            <div className="second-variation " ref={whychooseus}>
               <div className="text">
                 <h1 className="variations-h1">Why Choose Us</h1>
                 <p>
                   ++<b>Unparalleled expertise backed by years of experience.</b>
-                <p>Years of experience fuel our unmatched expertise, delivering excellence in every project</p>  
+                  <p>
+                    Years of experience fuel our unmatched expertise, delivering
+                    excellence in every project
+                  </p>
                 </p>
-                <p  >
+                <p>
                   ++<b>Proven track record of successful project delivery.</b>
-                  <p>Consistent success in project delivery defines our proven track record</p>
+                  <p>
+                    Consistent success in project delivery defines our proven
+                    track record
+                  </p>
                 </p>
-                <p  >
+                <p>
                   ++
                   <b>Client-centric approach with a focus on collaboration.</b>
-                  <p>Our client-centric approach revolves around collaboration. We prioritize your vision, ensuring a seamless partnership for success.</p>
+                  <p>
+                    Our client-centric approach revolves around collaboration.
+                    We prioritize your vision, ensuring a seamless partnership
+                    for success.
+                  </p>
                 </p>
 
                 <div className="buttons">
@@ -201,7 +221,8 @@ export default function index() {
           <div className="service">
             <h1>Our successful stories with clients</h1>
             <p className="front-page">
-            We are dedicated to exceeding client expectations and building lasting partnerships
+              We are dedicated to exceeding client expectations and building
+              lasting partnerships
             </p>
             <div className="service-items">
               <div className="item">
@@ -247,8 +268,8 @@ export default function index() {
               <div className="col-md-5 news-text">
                 <h2>Get your update news</h2>
                 <p>
-                  Stay informed about the latest happenings at Cleverbit. We
-                  are committed to keeping you in the loop with our most recent
+                  Stay informed about the latest happenings at Cleverbit. We are
+                  committed to keeping you in the loop with our most recent
                   developments, product releases, and industry insights.
                 </p>
               </div>
@@ -318,8 +339,9 @@ export default function index() {
             </div>
           </div>
         </div>
-      </main>
-      <Footer></Footer>
+      </main >
+      <div  ref={contact}>
+      <Footer></Footer></div>
     </>
   );
 }
