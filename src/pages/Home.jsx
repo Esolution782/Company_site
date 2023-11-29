@@ -8,7 +8,7 @@ export default function index() {
       <p className="font-bold  ">Welcome to Ewaysolution</p>
       <nav className="navbar navbar-expand-xl fixed-top">
         <div className="container">
-          <Link className="navbar-brand" to="./index.html">
+          <Link className="navbar-brand" to="/">
             <img className="logo" src="/assets/img/logo_sideText.png" alt="" />
           </Link>
           <button
@@ -25,7 +25,7 @@ export default function index() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link  active" to="./index.html">
+                <Link className="nav-link  active" to="/">
                   Home
                 </Link>
               </li>
