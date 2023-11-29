@@ -118,7 +118,7 @@ export default function index() {
               <div className="text">
                 <h1 className="variations-h1">Our Services</h1>
                 <p>
-                  <b> Web Application Development:</b>
+                  <b> - Web Application Development:</b>
                 </p>
                 <p>
                   {" "}
@@ -127,7 +127,7 @@ export default function index() {
                 </p>
 
                 <p>
-                  <b>Mobile App Development:</b>
+                  <b>- Mobile App Development:</b>
                 </p>
                 <p>
                   iOS, Android, and cross-platform app development for maximum
@@ -135,14 +135,14 @@ export default function index() {
                 </p>
 
                 <p>
-                  <b>Custom Software Development:</b>
+                  <b>- Custom Software Development:</b>
                 </p>
                 <p>
                   Tailored solutions to address your unique business challenges.
                 </p>
 
                 <p>
-                  <b>Consulting and Strategy:</b>
+                  <b>- Consulting and Strategy:</b>
                
                 </p>
                 <p>
