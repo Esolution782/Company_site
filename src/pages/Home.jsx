@@ -7,9 +7,9 @@ export default function index() {
   const ourService = useRef(null);
   const contact = useRef(null);
   const home = useRef(null);
+  const about = useRef(null);
 
   const scrollToSection = (elementRef) => {
- 
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: "smooth",
@@ -18,7 +18,9 @@ export default function index() {
 
   return (
     <>
-      <p className="font-bold  " ref={home}>Welcome to Cleverbit</p>
+      <p className="font-bold  " ref={home}>
+        Welcome to Cleverbit
+      </p>
       <nav className="navbar navbar-expand-xl fixed-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
@@ -38,7 +40,12 @@ export default function index() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link onClick={() => scrollToSection(home) } className="nav-link   active">Home</Link>
+                <Link
+                  onClick={() => scrollToSection(home)}
+                  className="nav-link   active"
+                >
+                  Home
+                </Link>
               </li>
               <li
                 className="nav-item"
@@ -120,44 +127,93 @@ export default function index() {
               </div>
             </div>
           </div>
-
+  
           <div id="variations" className="variations" ref={ourService}>
+{/*            
+          <div className="first-variation">
+              <div className="text">
+                <figure className="quote text-start">
+                  <blockquote className="blockquote">
+                    <p>Who Are We?</p>
+                  </blockquote>
+                  <figcaption className="blockquote-footer">
+                    CEO's Message <cite title="Source Title">MAM.Aasim</cite>
+                  </figcaption>
+                </figure>
+                <p className="text-justify">
+                  Welcome to Cloverbyte, your number one source for the
+                  development of custom applications. We are committed to
+                  providing you with the very best solution in technology, with
+                  an emphasis on quality, reliability and maintainability. In
+                  other words, we aim for our delivered solutions to "look
+                  great, function great, and stay up-to-date". Cloverbyte is a
+                  team of passionate technologists dedicated to providing
+                  first-class solutions to our customers. From the ground up we
+                  will develop a program to fit your needs or expand your
+                  existing process. We are specialized in a wide range of
+                  software and systems engineering, especially related to
+                  cloud-based systems, UI/UX design, and mobile application
+                  development. Our ability to create the best combination of
+                  technological knowledge and professional experience to meet
+                  unique consumer requirements is part of the value you get by
+                  partnering with Cloverbyte. We are a small business, proudly
+                  based on the passion and skills of our employees. If you like
+                  what we are about and enjoy our services as much as we enjoy
+                  delivering them, or if you have any questions or feedback,
+                  please feel free to contact us. Join us on our journey!
+                </p>
+
+                <div className="buttons">
+                  <Link to="" className="btn-fill">
+                    Read More
+                  </Link>
+                  <Link to="" className="btn-outline">
+                    Start Today
+                  </Link>
+                </div>
+              </div>
+
+              <div className="img rounded:10px">
+                <img src="/assets/img/workplace.webp" alt="" />
+              </div>
+            </div> */}
+            
+           
+           
             <div className="first-variation">
               <div className="img">
                 <img src="/assets/img/man.png" alt="" />
               </div>
               <div className="text">
                 <h1 className="variations-h1">Our Services</h1>
-                <p>
-                  <b> - Web Application Development:</b>
+                <p className="text-justify">
+                  <b> - Web & Desktop Applications:</b>
                 </p>
-                <p>
-                  {" "}
-                  Responsive and scalable web applications for a seamless user
-                  experience.
+                <p className="text-justify">
+                  An attractive and interactive website goes a long way to
+                  building your company's brand, delivering a message, or making
+                  sales. Every application should not only "get the job done",
+                  but look amazing while doing so.
                 </p>
 
                 <p>
                   <b>- Mobile App Development:</b>
                 </p>
-                <p>
-                  iOS, Android, and cross-platform app development for maximum
-                  reach.
+                <p className="text-justify">
+                  We specialize in developing native and hybrid mobile
+                  applications for iOS and Android devices. What better way to
+                  get your products to customers than to be on their personal
+                  device.
                 </p>
 
                 <p>
-                  <b>- Custom Software Development:</b>
+                  <b>- Cloud Solutions:</b>
                 </p>
-                <p>
-                  Tailored solutions to address your unique business challenges.
-                </p>
-
-                <p>
-                  <b>- Consulting and Strategy:</b>
-                </p>
-                <p>
-                  Strategic insights to guide your digital transformation
-                  journey.
+                <p className="text-justify">
+                  Leverage a full suite of advanced networking, application and
+                  hosting services. We specialize in creating custom cloud
+                  solutions with Amazon Web Services and the Google Cloud
+                  Platform.
                 </p>
 
                 <div className="buttons">
@@ -339,9 +395,10 @@ export default function index() {
             </div>
           </div>
         </div>
-      </main >
-      <div  ref={contact}>
-      <Footer></Footer></div>
+      </main>
+      <div ref={contact}>
+        <Footer></Footer>
+      </div>
     </>
   );
 }
