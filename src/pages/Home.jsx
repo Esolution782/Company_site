@@ -383,7 +383,7 @@ export default function index() {
                   <img src="/assets/img/team-2.png" alt="" />
                 </div>
                 <span className="name">M.Suhaith</span>
-                <span>Associate Software Engineer</span>
+                <span>Associate Software Engineer - Trainee</span>
               </div>
               <div className="person">
                 <div className="photo">
