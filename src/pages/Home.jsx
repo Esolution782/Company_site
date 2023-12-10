@@ -82,7 +82,7 @@ export default function index() {
         <div className="container">
           <div className="intro pb-5">
             <div className="intro-text">
-              <h1 className="intro-h1 ">Welcome to Cleverbit 2024</h1>
+              <h1 className="intro-h1 ">Welcome to Cleverbit</h1>
               <p className="front-page">
                 At Cleverbit, we're passionate about crafting cutting-edge
                 solutions that drive innovation and transform ideas into
