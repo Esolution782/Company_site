@@ -3,6 +3,10 @@
 @tailwind utilities; */
 
 
+/* button activation disabled */
+.sc-1au8ryl-0 {
+  display: none;
+}
 
 *,
 *::after,
