@@ -403,7 +403,7 @@ export default function index() {
                 <div className="photo">
                   <img  draggable="false" src="/assets/img/team-3.png" alt="" />
                 </div>
-                <span className="name">L.Mifrash </span>
+                <span className="name">L.MIFRAS </span>
                 <span>UI/UX Engineer</span>
               </div>
 
@@ -411,7 +411,7 @@ export default function index() {
                 <div className="photo">
                   <img  draggable="false" src="/assets/img/team-3.png" alt="" />
                 </div>
-                <span className="name">MM.Firnas Mohamed</span>
+                <span className="name">MM.FIRNAS MOHAMED</span>
                 <span>Project Manager</span>
               </div>
 
@@ -419,7 +419,7 @@ export default function index() {
                 <div className="photo">
                   <img  draggable="false" src="/assets/img/team-3.png" alt="" />
                 </div>
-                <span className="name">MIM. Rasmy</span>
+                <span className="name">MIM. RASMY</span>
                 <span>Client Support</span>
               </div>
 
@@ -428,7 +428,7 @@ export default function index() {
                 <div className="photo">
                   <img  draggable="false" src="/assets/img/team-2.png" alt="" />
                 </div>
-                <span className="name">M.Suhaith</span>
+                <span className="name">M.SUHAITH</span>
                 <span>Associate Software Engineer - Trainee</span>
               </div>
 
@@ -436,7 +436,7 @@ export default function index() {
                 <div className="photo">
                   <img   draggable="false" src="/assets/img/team-3.png" alt="" />
                 </div>
-                <span className="name">M.Abdul rahman</span>
+                <span className="name">M.MUBARAK</span>
                 <span>QA Team Lead</span>
               </div>
             </div>
