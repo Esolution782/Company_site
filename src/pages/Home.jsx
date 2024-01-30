@@ -196,7 +196,7 @@ export default function index() {
             </p>
             <div className="client-logo">
               <div>
-                <img  draggable="false" className="h-auto  w-100 " src="assets/img/siegntlanka.png" alt="" />
+                <img  draggable="false" className="h-auto  w-150 " src="assets/img/siegntlanka.png" alt="" />
               </div>
               <div>
                 <img  draggable="false" className="h-auto  w-100 " src="https://blogger.googleusercontent.com/img/a/AVvXsEh1KWIcAmQuPm7XlVe3F8FhxT5Xk9CWMIUtHcI7IO3vrKUvtCj2J5lw5Bv8Kqr5xOn_lOvVf8SV2mHwqDb-SKj_uFLtjABp6IR2EJxY7OwXuZWA-dUTMSW4KOE9mrQRJWXiZifshUj9jtvAP4bGqpJ-lsUXLT7O0I8w2Ngdn5eSgbg83HcJ0Du19tE7=s500" alt="" />
