@@ -8,15 +8,15 @@ export default function footer() {
     <div className="container text-center text-md-start py-5">
       <div className="footer-wrap">
         <div className="about">
-          <img className="logo" src="/assets/img/logo_sideText.png" alt="" />
+          <img  draggable="false" className="logo" src="/assets/img/logo_sideText.png" alt="" />
           <p className="text-muted py-4">
           At Cleverbit, we're passionate about crafting cutting-edge solutions that drive innovation and transform ideas into reality. Explore our world of software development excellence.
           </p>
           <div className="social-media">
-            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-01.svg" alt="" /></Link>
-            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-02.svg" alt="" /></Link>
-            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-03.svg" alt="" /></Link>
-            <Link to="" className="me-2 text-reset"><img src="/assets/img/icon/social-media-04.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img  draggable="false" src="/assets/img/icon/social-media-01.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img  draggable="false" src="/assets/img/icon/social-media-02.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img  draggable="false" src="/assets/img/icon/social-media-03.svg" alt="" /></Link>
+            <Link to="" className="me-2 text-reset"><img  draggable="false" src="/assets/img/icon/social-media-04.svg" alt="" /></Link>
           </div>
         </div>
 
