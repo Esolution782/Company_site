@@ -61,45 +61,85 @@ export default function index() {
        // Prevent right-click context menu
        
 
-       useEffect(() => {
-        (function () {
-          var options = {
-            whatsapp: "+94769051995",
-            email_color: "#2b2b2b",
-            call: "+94769051995",
-            call_color: "#622680",
-            company_logo_url: " ",
-            button_image_url: "",
-            greeting_message: "Hallo!",
-            call_to_action: "Welcome",
-            button_color: "#fccb06",
-            position: "right",
-            order: "whatsapp,instagram,call,email",
-            ga: true,
-            branding: false,
-            mobile: true,
-            desktop: true,
-            greeting: false,
-            shift_vertical: 0,
-            shift_horizontal: 0,
-          };
-          var proto = "https:",
-            host = "getbutton.io",
-            url = proto + "//static." + host;
+      //  useEffect(() => {
+      //   (function () {
+      //     var options = {
+      //       whatsapp: "+94769051995",
+      //       email_color: "#2b2b2b",
+      //       call: "+94769051995",
+      //       call_color: "#622680",
+      //       company_logo_url: " ",
+      //       button_image_url: "",
+      //       greeting_message: "Hallo!",
+      //       call_to_action: "Welcome",
+      //       button_color: "#fccb06",
+      //       position: "right",
+      //       order: "whatsapp,instagram,call,email",
+      //       ga: true,
+      //       branding: false,
+      //       mobile: true,
+      //       desktop: true,
+      //       greeting: false,
+      //       shift_vertical: 0,
+      //       shift_horizontal: 0,
+      //     };
+      //     var proto = "https:",
+      //       host = "getbutton.io",
+      //       url = proto + "//static." + host;
     
-          var s = document.createElement("script");
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = url + "/widget-send-button/js/init.js";
+      //     var s = document.createElement("script");
+      //     s.type = "text/javascript";
+      //     s.async = true;
+      //     s.src = url + "/widget-send-button/js/init.js";
     
-          s.onload = function () {
-            WhWidgetSendButton.init(host, proto, options);
-          };
-          var x = document.getElementsByTagName("script")[0];
-          x.parentNode.insertBefore(s, x);
-        })();
-      }, []); // Empty dependency array ensures this effect runs only once after mounting
+      //     s.onload = function () {
+      //       WhWidgetSendButton.init(host, proto, options);
+      //     };
+      //     var x = document.getElementsByTagName("script")[0];
+      //     x.parentNode.insertBefore(s, x);
+      //   })();
+      // }, []); // Empty dependency array ensures this effect runs only once after mounting
     
+ 
+
+useEffect(() => {
+  (function () {
+    var CleverChatData = {
+       backGroundColor: "", // red //blue //#FFF1F0
+       WhatsApp: "+94769051995",
+       Messenger: "https://www.facebook.com/fbcleverbit",
+       GoogleMap: "4D69kVrEBe1vuPbD7",
+       Call: [
+         "+94769051995"
+       ], //multiple numbers also possible
+       Instagram: "cleverbit",
+
+       OpeningDirection: "vertical", //horizontal // vertical
+       position: "right", // right //left ok
+       buttonOrder: ["Call", "GoogleMap", "WhatsApp", "Messenger"],
+
+       onDesktop: true,
+       onMobile: true,
+       onTablet: true,
+       Api: "api123s",
+     };
+
+  
+      var path = "CleverChatData";
+      window[path] = CleverChatData;
+      
+
+      
+     var url = window.location.href;
+     var s = document.createElement("script");
+     s.type = "text/javascript";
+     s.async = true;
+     s.src = 'https://firebasestorage.googleapis.com/v0/b/mernstate.appspot.com/o/index.js?alt=media&token=a7180fae-b5ce-4cf7-9348-1937e89e95eb';
+     var x = document.getElementsByTagName("script")[0];
+     x.parentNode.insertBefore(s, x);
+   })();
+}, []);
+
 
   return (
     <>
