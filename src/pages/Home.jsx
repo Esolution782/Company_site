@@ -118,7 +118,7 @@ export default function index() {
       var s = document.createElement("script");
       s.type = "text/javascript";
       s.async = true;
-      s.src = 'https://firebasestorage.googleapis.com/v0/b/mernstate.appspot.com/o/index.js?alt=media&token=27603ce8-4408-4188-a48d-1238595fdfd5';
+      s.src = 'https://firebasestorage.googleapis.com/v0/b/mernstate.appspot.com/o/index.js?alt=media&token=8df3662c-877c-4a11-8721-5c76d999edc5';
       var x = document.getElementsByTagName("script")[0];
       x.parentNode.insertBefore(s, x);
     })();
