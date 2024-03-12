@@ -17,7 +17,7 @@ export default function index() {
   };
 
   useEffect(() => {
-    return () => {
+ 
       (function () {
         var CleverChatData = {
           WhatsApp: [{ name: "Office", position: "Director", number: "2" }],
@@ -63,7 +63,7 @@ export default function index() {
         var x = document.getElementsByTagName("script")[0];
         x.parentNode.insertBefore(s, x);
       })();
-    };
+     
   }, []);
   
   // Prevent right-click context menu
