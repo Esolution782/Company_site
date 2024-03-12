@@ -16,40 +16,90 @@ export default function index() {
     });
   };
 
-  // Prevent right-click context menu
   useEffect(() => {
-    // Prevent right-click context menu
-    const preventContextMenu = (event) => {
-      event.preventDefault();
-    };
-
-    // Prevent text selection
-    const preventTextSelection = (event) => {
-      event.preventDefault();
-    };
-
-    // Handle keydown events for Ctrl+U and F12
-    const handleKeyDown = (event) => {
-      if ((event.ctrlKey || event.metaKey) && event.key === "u") {
-        event.preventDefault(); // Prevent Ctrl+U
-      }
-      if (event.key === "F12") {
-        event.preventDefault(); // Prevent F12
-      }
-    };
-
-    // Add event listeners
-    document.addEventListener("contextmenu", preventContextMenu);
-    document.addEventListener("copy", preventTextSelection);
-    document.addEventListener("keydown", handleKeyDown);
-
-    // Cleanup function to remove event listeners
     return () => {
-      document.removeEventListener("contextmenu", preventContextMenu);
-      document.removeEventListener("copy", preventTextSelection);
-      document.removeEventListener("keydown", handleKeyDown);
+      (function () {
+        var CleverChatData = {
+          WhatsApp: [{ name: "Office", position: "Director", number: "2" }],
+          Messenger: "12",
+          OpeningDirection: "vertical",
+          position: "left",
+          buttonOrder: [
+            "Call",
+            "Messenger",
+            "WeChat",
+            "Team",
+            "Linkedin",
+            "TikTok",
+            "Skype",
+            "Telegram",
+            "WhatsApp",
+            "Viber",
+            "Line",
+            "Twitter",
+            "GoogleMap",
+            "Instagram",
+            "Youtube",
+            "Thread",
+            "CustomLink",
+            "X",
+            "AppleMessages",
+          ],
+          onDesktop: true,
+          onMobile: true,
+          onTablet: true,
+          Api: "api123s",
+        };
+
+        var path = "CleverChatData";
+        window[path] = CleverChatData;
+
+        var url = window.location.href;
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src =
+          "https://firebasestorage.googleapis.com/v0/b/mernstate.appspot.com/o/ClerverJs.js?alt=media";
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
     };
   }, []);
+  
+  // Prevent right-click context menu
+  // useEffect(() => {
+  //   // Prevent right-click context menu
+  //   const preventContextMenu = (event) => {
+  //     event.preventDefault();
+  //   };
+
+  //   // Prevent text selection
+  //   const preventTextSelection = (event) => {
+  //     event.preventDefault();
+  //   };
+
+  //   // Handle keydown events for Ctrl+U and F12
+  //   const handleKeyDown = (event) => {
+  //     if ((event.ctrlKey || event.metaKey) && event.key === "u") {
+  //       event.preventDefault(); // Prevent Ctrl+U
+  //     }
+  //     if (event.key === "F12") {
+  //       event.preventDefault(); // Prevent F12
+  //     }
+  //   };
+
+  //   // Add event listeners
+  //   document.addEventListener("contextmenu", preventContextMenu);
+  //   document.addEventListener("copy", preventTextSelection);
+  //   document.addEventListener("keydown", handleKeyDown);
+
+  //   // Cleanup function to remove event listeners
+  //   return () => {
+  //     document.removeEventListener("contextmenu", preventContextMenu);
+  //     document.removeEventListener("copy", preventTextSelection);
+  //     document.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
   // Prevent right-click context menu
 
   //  useEffect(() => {
@@ -92,36 +142,7 @@ export default function index() {
   // }, []); // Empty dependency array ensures this effect runs only once after mounting
 
   useEffect(() => {
-    (function () {
-      var CleverChatData = {
-        backGroundColor: "", // red //blue //#FFF1F0
-        WhatsApp: "+94769051995", // WhatsApp Number
-        Messenger: "109186555335131", // facebook Page ID
-        GoogleMap: "4D69kVrEBe1vuPbD7", // google Map ID
-        Call: ["+94769051995"], //multiple numbers also possible
-        Instagram: "cleverbit",
-
-        OpeningDirection: "vertical", //horizontal // vertical
-        position: "right", // right //left ok
-        buttonOrder: ["Call", "WhatsApp", "Messenger", "GoogleMap"],
-
-        onDesktop: true,
-        onMobile: true,
-        onTablet: true,
-        Api: "api123s",
-      };
-
-      var path = "CleverChatData";
-      window[path] = CleverChatData;
-
-      var url = window.location.href;
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = 'https://firebasestorage.googleapis.com/v0/b/mernstate.appspot.com/o/index.js?alt=media&token=8df3662c-877c-4a11-8721-5c76d999edc5';
-      var x = document.getElementsByTagName("script")[0];
-      x.parentNode.insertBefore(s, x);
-    })();
+   
 
     // greeting: true, // Greeting message enabled
     //     greetingMessage:
@@ -134,6 +155,9 @@ export default function index() {
 
   return (
     <>
+   
+ 
+
       <p className="font-bold  " ref={home}>
         Welcome to Cleverbit
       </p>
